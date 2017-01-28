@@ -53,6 +53,18 @@ scroll-behavior: smooth;
     width: 100%;
   }
 
+  .footer{
+    background: #284942;
+    color: white;
+    height: 2em;
+    margin-left: 0;
+  }
+
+  .footer img{
+    margin-top: 0.2em;
+    width: 13%;
+  }
+
 }
 
 
@@ -187,15 +199,23 @@ body{
   padding-bottom: 2em;
 }
 
-.foot{
+.footer{
   background: #284942;
   color: white;
   height: 4em;
   width: 100%;
 }
 
-.foot p{
-  padding-top: 1.8em;
+.footer p{
+  padding-top: 1.8em !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.footer img{
+  width: 5%;
+  margin-top: 1em !important;
+  margin-left: 40% !important;
 }
 
 }
