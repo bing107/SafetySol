@@ -53,6 +53,10 @@ scroll-behavior: smooth;
     width: 100%;
   }
 
+  #para p{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
   .footer{
     background: #284942;
     color: white;
@@ -62,7 +66,7 @@ scroll-behavior: smooth;
 
   .footer img{
     margin-top: 0.2em;
-    width: 13%;
+    width: 10%;
   }
 
 }
@@ -133,12 +137,20 @@ body{
   }
 
   #types{
-    margin-top: 15em !important;
     background: white;
   }
 
+  #types h2{
+    position: absolute;
+    margin-left: 19% !important;
+    margin-top: 18% !important;
+    z-index: 5;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 5em;
+  }
+
   #box{
-    background-size: cover;
     height: 20em;
   }
 
@@ -184,6 +196,19 @@ body{
 
  #about{
    background-color: white;
+   height: 30em;
+ }
+
+ #about h2{
+   margin-top: 7em !important;
+ }
+
+ #about{
+   border-right: .05px solid rgba(0, 0, 0, 0.5);
+ }
+
+ #para h3{
+   margin-top: 6em !important;
  }
 
  #text{
@@ -197,6 +222,11 @@ body{
 
 #text h3{
   padding-bottom: 2em;
+}
+
+#filler img{
+  width: 25%;
+  margin-left: 36% !important;
 }
 
 .footer{
