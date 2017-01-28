@@ -1,3 +1,9 @@
+a{
+  text-decoration: none;
+}
+*{
+scroll-behavior: smooth;
+}
 
 @media (max-width: 700px) {
   img{
@@ -11,7 +17,6 @@
   .button{
     height: 5em;
     width: 5em;
-    position: fixed;
   }
 
   .close{
@@ -29,7 +34,11 @@
   }
 
   #tagline{
-    margin-top: 3em;
+    color: white;
+    background: #174038;
+  }
+
+  #tagline img{
   }
 
   #tagline img{
@@ -55,6 +64,16 @@ body{
   background: white;
 }
 
+.container-fluid{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.row, #box{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .button{
   display: none;
 }
@@ -62,6 +81,7 @@ body{
   #navbar{
     height: 8em;
     text-align: center;
+    display: block;
   }
 
   #tagline{
@@ -100,9 +120,42 @@ body{
     height: 28.55em;
   }
 
+  #types{
+    margin-top: 15em !important;
+    background: white;
+  }
+
+  #box{
+    background-size: cover;
+    height: 20em;
+  }
+
   #box img{
-    margin-top: 18em;
-    margin-bottom: 4em;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #box:hover .overlay{
+    opacity: 1;
+  }
+
+  #box h4{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 30%;
+    color: white;
+  }
+
+  .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
   }
 
   #info{
@@ -118,13 +171,12 @@ body{
   }
 
  #about{
-   background-color: #284942;
+   background-color: white;
  }
 
  #text{
    margin-top: 3em;
    background: rgba(255, 255, 255, 0);
-   color: white;
  }
 
  #text p{
@@ -135,33 +187,14 @@ body{
   padding-bottom: 2em;
 }
 
-#us{
-  margin-top: 2em;
-  margin-left: 1em;
-  background: inherit;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#us h3{
-  margin-bottom: 5em;
-}
-
-
-#us img{
-  margin: 0;
-  padding: 0;
-}
-
-.profile:hover{
-}
-
-.footer{
+.foot{
   background: #284942;
   color: white;
   height: 4em;
+  width: 100%;
 }
 
-.footer p{
+.foot p{
   padding-top: 1.8em;
 }
 
