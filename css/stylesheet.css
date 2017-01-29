@@ -57,16 +57,17 @@ scroll-behavior: smooth;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
 
+  #list li{
+    margin-top: 5em !important;
+    list-style-type: none;
+  }
+
   .footer{
-    background: #284942;
-    color: white;
-    height: 2em;
     margin-left: 0;
   }
 
   .footer img{
     margin-top: 0.2em;
-    width: 10%;
   }
 
 }
@@ -150,6 +151,10 @@ body{
     font-size: 5em;
   }
 
+  #types #marker{
+      margin-left: 23.5% !important;
+  }
+
   #box{
     height: 20em;
   }
@@ -207,6 +212,12 @@ body{
    border-right: .05px solid rgba(0, 0, 0, 0.5);
  }
 
+ .image{
+   background-image: url(../img/contact.jpg);
+   background-position: center;
+   background-size: cover;
+ }
+
  #para h3{
    margin-top: 6em !important;
  }
@@ -226,26 +237,23 @@ body{
 
 #filler img{
   width: 25%;
-  margin-left: 36% !important;
+  margin-top: 15% !important;
+  margin-left: 38% !important;
 }
 
 .footer{
-  background: #284942;
-  color: white;
   height: 4em;
   width: 100%;
 }
 
 .footer p{
   padding-top: 1.8em !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
 }
 
 .footer img{
-  width: 5%;
+  width: 40%;
   margin-top: 1em !important;
-  margin-left: 40% !important;
+  margin-left: 30% !important;
 }
 
 }
