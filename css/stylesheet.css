@@ -25,7 +25,7 @@ scroll-behavior: smooth;
   }
 
   #navbar{
-    background-color: #174038;
+    background-color: #02a79d;
     color: white;
   }
 
@@ -35,7 +35,7 @@ scroll-behavior: smooth;
 
   #tagline{
     color: white;
-    background: #174038;
+    background: #02a79d;
   }
 
   #tagline img{
@@ -76,14 +76,12 @@ scroll-behavior: smooth;
 @media (min-width: 700px) {
 
 body{
-  margin: 0;
-  padding: 0;
   background: white;
 }
 
-.container-fluid{
-  padding: 0 !important;
-  margin: 0 !important;
+.container{
+  width: 90%;
+  padding-left: 10%;
 }
 
 .row, #box{
@@ -96,9 +94,11 @@ body{
 }
 
   #navbar{
-    height: 8em;
+    height: 4em;
     text-align: center;
     display: block;
+    border: none;
+    z-index: 2;
   }
 
   #tagline{
@@ -115,12 +115,19 @@ body{
   }
 
   #navbar img{
-    padding-top: 1em;
+    padding-top: .7em;
+    width: 80%;
+    padding-bottom: 0 !important;
+    margin-bottom: -2em; !important;
   }
 
   #navbar>*{
     margin-top: 1em;
     margin-bottom: 2em;
+  }
+
+  #banner{
+    margin-top: 1em !important;
   }
 
   #banner>*{
@@ -133,21 +140,18 @@ body{
   }
 
   #slider img{
-    width: 48.35em;
-    height: 28.55em;
+    width: 100%;
+    height: 10em;
   }
 
   #types{
     background: white;
   }
 
-  #types h2{
-    position: absolute;
-    margin-left: 19% !important;
-    margin-top: 18% !important;
+  #types h3{
+    background: #02a79d;
     z-index: 5;
-    font-weight: bolder;
-    color: rgba(0, 0, 0, 0.7);
+    color: white;
     font-size: 5em;
   }
 
@@ -156,56 +160,47 @@ body{
   }
 
   #box{
-    height: 20em;
+    height: 10em;
+    margin-top: 5% !important;
+    border: 1px solid black;
   }
 
   #box img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     margin: 0;
     padding: 0;
+    margin-top: 20% !important;
   }
 
-  #box:hover .overlay{
-    opacity: 1;
-  }
 
   #box h4{
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 30%;
-    color: white;
+    margin-bottom: 5% !important;
   }
 
-  .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
+  #second{
+    margin-left: 8% !important;
   }
 
   #info{
-    background-color: #174038;
+    background-color: #02a79d;
     color: white;
     padding-top: 5em;
     padding-bottom: 5em;
-    height: 28.55em;
+    height: 10em;
   }
 
   #info h2{
-    margin-top: 3em;
+    margin-top: -1.5em;
   }
 
  #about{
    background-color: white;
-   height: 30em;
+   height: 15em;
  }
 
  #about h2{
-   margin-top: 7em !important;
+   margin-top: 2.5em !important;
  }
 
  #about{
@@ -218,8 +213,16 @@ body{
    background-size: cover;
  }
 
+ #para{
+   height: 15em;
+ }
+
  #para h3{
-   margin-top: 6em !important;
+   margin-top: 1.5em !important;
+ }
+
+ #para a{
+   text-decoration: underline;
  }
 
  #text{
@@ -235,10 +238,14 @@ body{
   padding-bottom: 2em;
 }
 
+#filler{
+  background-color: #02a79d;
+  margin-top: 15% !important;
+}
+
 #filler img{
   width: 25%;
-  margin-top: 15% !important;
-  margin-left: 38% !important;
+  margin-left: 15% !important;
 }
 
 .footer{
