@@ -101,6 +101,7 @@ body{
     border: none;
     z-index: 2;
     margin-bottom: -1em !important;
+    opacity: 1;
   }
 
   #tagline{
@@ -165,11 +166,11 @@ body{
   /********************************/
   .fade-carousel {
       position: relative;
-      height: 34em;
+      height: 24em;
       margin-bottom: -1.5em !important;
   }
   .fade-carousel .carousel-inner .item {
-      height: 33.5em;
+      height: 23.5em;
   }
   .fade-carousel .carousel-indicators > li {
       margin: 0 2px;
@@ -321,11 +322,10 @@ body{
  #about{
    background-color: white;
    height: 15em;
-   opacity: 0;
  }
 
  #about h2{
-   margin-top: 2.5em !important;
+   margin-top: 1em !important;
  }
 
  #about{
@@ -340,7 +340,6 @@ body{
 
  #para{
    height: 15em;
-   opacity: 0;
    background: white;
  }
 
@@ -383,8 +382,6 @@ body{
   color: white;
   font-size: 5em;
   margin-top: -.5em !important;
-  padding-left: -1em !important;
-  padding-right: -1em !important;
 }
 
 #banner2 ul{
