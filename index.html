@@ -18,6 +18,7 @@
     <script src="parallax/parallax.min.js"></script>
     <script src="parallax/parallax.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/jquery.flip.min.js"></script>
     <script
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity=
@@ -34,11 +35,15 @@
       </div>
       <div class="row background text-center" id="navbar">
 
-        <div class="col-md-3">
+        <div class="col-md-1 col-sm-1">
 
         </div>
+
         <div class="col-md-1">
           <img src="img/ss.png" alt="">
+        </div>
+        <div class="col-md-3 text-center">
+          <h3>Safety Solutions</h3>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-12">
           <a href="#"><h5>Home</h5></a>
@@ -47,16 +52,13 @@
           <a href="#types"><h5>Products</h5></a>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-12">
-          <a href="#"><h5>Clients</h5></a>
+          <a href="#clients"><h5>Clients</h5></a>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-12">
           <a href="#about"><h5>About</h5></a>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-12">
           <a href="pages/contact.html"><h5>Contact</h5></a>
-        </div>
-        <div class="col-md-3 col-sm-3">
-
         </div>
       </div>
 
@@ -68,17 +70,51 @@
       <div class="row parallax-window" data-parallax="scroll"
       data-image-src="img/z.jpg" id="banner">
 
-        <div class="col-md-6 col-sm-12 col-xs-12" id="info">
-          <div class="col-md-2">
+      <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+<!-- Overlay -->
 
-          </div>
-          <h2 class="col-md-8 col-sm-6 text-center">
-            WHERE YOUR SAFETY COMES FIRST</h2>
-        </div>
 
-        <div class="col-md-6" id="slider">
-          <img src="img/bg.jpg" alt="">
-        </div>
+<!-- Indicators -->
+<ol class="carousel-indicators">
+  <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+  <li data-target="#bs-carousel" data-slide-to="1"></li>
+  <li data-target="#bs-carousel" data-slide-to="2"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+  <div class="item slides active">
+    <div class="slide-1"></div>
+    <div class="hero">
+      <hgroup>
+          <h1>We are creative</h1>
+          <h3>Get start your next awesome project</h3>
+      </hgroup>
+      <button class="btn btn-hero btn-lg" role="button">See all features</button>
+    </div>
+  </div>
+  <div class="item slides">
+    <div class="slide-2"></div>
+    <div class="hero">
+      <hgroup>
+          <h1>We are smart</h1>
+          <h3>Get start your next awesome project</h3>
+      </hgroup>
+      <a href="#"><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+    </div>
+  </div>
+  <div class="item slides">
+    <div class="slide-3"></div>
+    <div class="hero">
+      <hgroup>
+          <h1>We are amazing</h1>
+          <h3>Get start your next awesome project</h3>
+      </hgroup>
+      <button class="btn btn-hero btn-lg" role="button">See all features</button>
+    </div>
+  </div>
+</div>
+</div>
     </div>
 
     <div class="row" id="banner">
@@ -110,32 +146,32 @@
             <h3>AVAILABLE CATEGORIES</h3>
 
 
-            <a href="pages/hats.html"><div class="col-md-2" id="box">
+            <a href="pages/hats.html"><div class="col-md-2 box">
               <img src="img/hats.png" alt="" col-md-12>
               <h4>Head Protection</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
               <img src="img/gloves.png" alt="" col-md-12>
               <h4>Hand Protection</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
               <img src="img/boots.png" alt="" col-md-12>
               <h4>Foot Protection</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
               <img src="img/glasses.png" alt="" col-md-12>
               <h4>Eye Protection</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
               <img src="img/ears.png" alt="" col-md-12>
               <h4>Ear Protection</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box" id="box-last">
               <img src="img/coverall.png" alt="" col-md-12>
               <h4>Full Body Protection</h4>
             </div></a>
@@ -145,34 +181,74 @@
 
 
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
               <img src="img/sign.png" alt="" col-md-12>
               <h4>Safety Signs</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
+              <img src="img/cap.ico" alt="" col-md-12>
+              <h4>Caps</h4>
+            </div></a>
+
+            <a href="#"><div class="col-md-2 box">
               <img src="img/polo.png" alt="" col-md-12>
               <h4>Polo Shirts</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
               <img src="img/aid.png" alt="" col-md-12>
               <h4>First Aid Box</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box">
               <img src="img/needle.png" alt="" col-md-12>
               <h4>Embroided Logos</h4>
             </div></a>
 
-            <a href="#"><div class="col-md-2" id="box">
+            <a href="#"><div class="col-md-2 box" id="box-last">
               <img src="img/minmin.png" alt="" col-md-12>
               <h4>Sorbent Products</h4>
             </div></a>
 
 
           </div>
+
+          </div>
+
+        <div class="jumbotron col-md-12 text-center" id="banner2">
+
+          <h3 class="col-md-12">Clients</h3>
+
+          <div class="col-md-6 col-sm-12 col-xs-12 text-left" id="headline">
+          <ul>
+            <li>British High Commission </li>
+            <li>BHP Petroleum<br> Pakistan </li>
+            <li>Pharmacia & Upjohn </li>
+            <li>KSR Steel Pvt Ltd </li>
+            <li>Halliburton Ltd. </li>
+            <li>Pride Forasol </li>
+            <li>BGP Pakistan </li>
+            <li>Tullow Oil </li>
+            <li>Tethiyan Copper Company </li>
+            <li>Reinforced Earth<br> Pvt.Ltd. </li>
+          </ul>
+          </div>
+
+          <div class="col-md-6 text-left" id="clients">
+            <ul>
+              <li>Transpack Packing<br> & Freight Forwarding Co. </li>
+              <li>PREMIER & Kufpec<br> Exploration Pakistan </li>
+              <li>Step Oiltools FZE<br>-Pakistan Branch </li>
+              <li>SHV Energy Pakistan<br> (Pvt) Ltd. </li>
+              <li>Sprint Oil & Gas<br> Services </li>
+
+
+            </ul>
+          </div>
         </div>
+
+
 
         <div class="row col-md-12 col-sm-12" id="filler">
           <img src="img/ssw.png" alt="" class="col-md-6 col-sm-6 col-xs-12">
