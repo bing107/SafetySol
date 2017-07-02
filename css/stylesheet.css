@@ -1,10 +1,18 @@
+@media (max-width: 786px) {
+.menu{
+  margin-top: -.5em!important;
+
+}
+*{
+  overflow-x: hidden;
+}
+}
+
 #x{
   background-image: url(../img/concrete-texture.png);
 }
 
-.navbar{
 
-}
 
 .navbar div{
   float: right;
@@ -17,6 +25,7 @@
   float: left;
 
 }
+
 #title h4{
   font-family: 'Audiowide', cursive;
 
@@ -49,22 +58,24 @@ p{
 
 .single{
   height: 35em;
-/*  background-color: black; */
+
   margin: 0!important;
   padding: 0!important;
 }
 
-/*.coverall{
+.coverall{
   background-image: url(../img/cvr.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-} */
+}
 
 .double{
   height: 35em;
   background-color: black;
   float: right!important;
+  margin: 0!important;
+  padding: 0!important;
 }
 
 .overlay{
@@ -79,6 +90,18 @@ p{
   font-family: 'Exo', sans-serif;
   margin-top: 3em;
   padding: 2em;
+}
+
+@keyframes zoomzoom {
+  0% {font-size: 2em;}
+
+  100% {font-size: 4em;}
+}
+
+.overlay:hover h2{
+  animation: forwards;
+  animation-name: zoomzoom;
+  animation-duration: 1s;
 }
 
 .footer{
