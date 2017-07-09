@@ -1,21 +1,23 @@
 @media (max-width: 786px) {
 .menu{
-  margin-top: -.5em!important;
+  margin-top: 0!important;
 
 }
+
 *{
   overflow-x: hidden;
 }
+
 .tagline{
   height: auto;
+  overflow-y: hidden;
 }
+
 }
 
 #x{
-  background-image: url(../img/concrete-texture.png);
+  background-image: url(../img/shattered.png);
 }
-
-
 
 .navbar div{
   float: right;
@@ -73,6 +75,76 @@ p{
   background-position: bottom;
 }
 
+.gloves{
+  background-image: url(../img/glove.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.glasses{
+  background-image: url(../img/glasses.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.helmet{
+  background-image: url(../img/helmet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.boot{
+  background-image: url(../img/boot.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.ear{
+  background-image: url(../img/ear.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.cap{
+  background-image: url(../img/cap.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.aid{
+  background-image: url(../img/aid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.sign{
+  background-image: url(../img/sign.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.map{
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.elogo{
+  background-image: url(../img/elogo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 .double{
   height: 35em;
   background-color: black;
@@ -93,6 +165,8 @@ p{
   font-family: 'Exo', sans-serif;
   margin-top: 3em;
   padding: 2em;
+  transition: .1s;
+  -webkit-transition: .1s;
 }
 
 @keyframes zoomzoom {
@@ -107,7 +181,33 @@ p{
   animation-duration: 1s;
 }
 
+.overlayMap{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlayMap h2,p{
+  position: absolute;
+  color: white;
+  font-family: 'Exo', sans-serif;
+  margin-top: 3em;
+  padding: 2em;
+  font-size: 3em;
+}
+
+.overlayMap:hover h2{
+  animation: forwards;
+  animation-name: ;
+  animation-duration: 1s;
+}
+
 .footer{
   background-color: black;
-  height: 4em;
+  color: white;
+}
+
+.footer h5{
+
+  font-family: 'Exo', sans-serif;
 }
