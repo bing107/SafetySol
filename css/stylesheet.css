@@ -1,213 +1,274 @@
-@media (max-width: 786px) {
-.menu{
-  margin-top: 0!important;
+/*  Animations Keyframes & Fonts    */
 
+
+@font-face {
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis-Light.otf") format("opentype");
 }
 
-*{
+@font-face {
+  font-family: 'DosisB';
+  src: url("../fonts/Dosis-Bold.otf") format("opentype");
+}
+
+/*   END   */
+
+/*   Basic Structure Body Container etc.   */
+
+.container-fluid{
+  height: auto;
+  font-family: 'Dosis';
+  background-image: url(../img/dark.png);
   overflow-x: hidden;
 }
 
-.tagline{
-  height: auto;
-  overflow-y: hidden;
+* h1 a{
+  text-decoration: none;
+  color: white;
 }
 
+* h1 a:hover{
+  text-decoration: none;
+  color: white;
 }
 
-#x{
-  background-image: url(../img/shattered.png);
-}
-
-.navbar div{
-  float: right;
-  margin: 2em;
-  font-family: 'Jura', sans-serif;
-}
-
-#title{
-  height: 5em;
-  float: left;
-
-}
-
-#title h4{
-  font-family: 'Audiowide', cursive;
-
-}
-
-p{
-  font-size: .7em;
+.nav{
+  height: 15em;
+  color: white;
 }
 
 .menu{
-  margin-top: .5em;
+  background-image: url(../img/menu.png);
+  height: 4em;
+  position: fixed!important;
+  z-index: 999;
+  top: 2em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.menuPage{
+  height: 100vh;
+  position: fixed!important;
+  left: 0em;
+  z-index: 9999;
+  background-color: white;
+}
+
+.heading{
+  font-family: 'Orbitron';
+}
+
+.menuPage h1 a{
+  color: black;
+}
+
+.menuPage h1 a:hover{
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .main{
-  background-image: url(../img/ss.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  height: 34em;
+  height: 30em;
 }
 
 .main h1{
-  font-family: 'Exo', sans-serif;
-  margin-top: 3em;
-  padding: 2em;
-  margin-right: 0;
-  font-weight: bolder;
-  text-align: left;
+  font-size: 8em;
 }
 
-.single{
-  height: 35em;
+.title{
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
+  box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
+  font-family: 'Orbitron';
+}
 
-  margin: 0!important;
+.logo{
+  height: 100%;
+  background-image: url(../img/ss.png);
+  background-position: right -4em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.proIntro{
+  background-color: white;
+  height: 10em;
+  margin-top: -5em;
+  -webkit-box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
+  box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
+}
+
+.products{
+  height: auto;
+  background-color: white;
+}
+
+.prodLine{
+  height: 35em;
+}
+
+.left{
+  background-color: white;
+  height: 100%;
   padding: 0!important;
+  margin: 0;
+}
+
+.right{
+  background-color: white;
+  height: 100%;
+  padding: 0!important;
+  margin: 0;
 }
 
 .coverall{
   background-image: url(../img/cvr.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-}
-
-.gloves{
-  background-image: url(../img/glove.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
+  background-position: center;
 }
 
 .glasses{
   background-image: url(../img/glasses.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-}
-
-.helmet{
-  background-image: url(../img/helmet.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.boot{
-  background-image: url(../img/boot.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 .ear{
   background-image: url(../img/ear.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
-.cap{
-  background-image: url(../img/cap.JPG);
+.boots{
+  background-image: url(../img/boot.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
-.aid{
-  background-image: url(../img/aid.jpg);
+.helmet{
+  background-image: url(../img/helmet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
-.sign{
-  background-image: url(../img/sign.jpg);
+.glove{
+  background-image: url(../img/glove.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-}
-
-.map{
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-position: right;
 }
 
 .elogo{
   background-image: url(../img/elogo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
 }
 
-.double{
-  height: 35em;
-  background-color: black;
-  float: right!important;
-  margin: 0!important;
-  padding: 0!important;
+.cap{
+  background-image: url(../img/cap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.aid{
+  background-image: url(../img/aid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.jack{
+  background-image: url(../img/jack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .overlay{
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.overlay h2{
-  position: absolute;
+  padding: 0;
+  margin: 0!important;
   color: white;
-  font-family: 'Exo', sans-serif;
-  margin-top: 3em;
-  padding: 2em;
-  transition: .1s;
-  -webkit-transition: .1s;
+  cursor: pointer;
 }
 
-@keyframes zoomzoom {
-  0% {font-size: 2em;}
-
-  100% {font-size: 4em;}
-}
-
-.overlay:hover h2{
-  animation: forwards;
-  animation-name: zoomzoom;
-  animation-duration: 1s;
-}
-
-.overlayMap{
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.overlayMap h2,p{
-  position: absolute;
-  color: white;
-  font-family: 'Exo', sans-serif;
-  margin-top: 3em;
-  padding: 2em;
+.overlay h1{
   font-size: 3em;
+  padding-top: 5em;
+  cursor: pointer;
 }
 
-.overlayMap:hover h2{
-  animation: forwards;
-  animation-name: ;
-  animation-duration: 1s;
+.overlay:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: .3s ease-in-out;
 }
 
-.footer{
-  background-color: black;
-  color: white;
+.abIntro{
+  background-color: white;
+  height: 10em;
+  margin-top: -5em;
+  -webkit-box-shadow: 0px 47px 53px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 47px 53px -18px rgba(0,0,0,0.75);
+  box-shadow: 0px 47px 53px -18px rgba(0,0,0,0.75);
 }
 
-.footer h5{
+.about{
+  height: 50em;
+  background-image: url(../img/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-  font-family: 'Exo', sans-serif;
+.text{
+  height: auto;
+  top: 5em;
+  background-color: white;
+  font-size: 1.5em;
+  -webkit-box-shadow: -31px 0px 53px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -31px 0px 53px 1px rgba(0,0,0,0.75);
+  box-shadow: -31px 0px 53px 1px rgba(0,0,0,0.75);
+  font-family: 'Orbitron';
+}
+
+.text2{
+  height: auto;
+  top: 3em;
+  font-size: 1.5em;
+  font-family: 'Orbitron';
+}
+
+.quote{
+  height: 25em;
+  background: black;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .title{
+    font-size: .4em;
+    margin-top: -19em;
+  }
+  .menu{
+    background-color: black;
+  }
+  .logo{
+    background-position: center -1em;
+  }
 }
