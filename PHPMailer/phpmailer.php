@@ -20,7 +20,7 @@ if(isset($_POST['submit']))
     $mail->SMTPSecure = 'tls';
     $mail->Username = "safetysolweb@outlook.com";
     $mail->Password = "safety101";
-    $mail->AddAddress('safetysolutionss@hotmail.com');
+    $mail->AddAddress('talhaiqbalsyed@hotmail.com');
     $mail->FromName = "Safety Solution Web";
     $mail->Subject = "Your Order";
     $mail->Body = "Dear Sir/Madam," . "\r\n" .
