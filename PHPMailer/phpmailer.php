@@ -48,7 +48,7 @@ if(isset($_POST['submit']))
         echo "<script>window.alert('Mailer Error: ');".$mail->ErrorInfo."window.location.href = '../index.html';</script>";
     } else {
         echo "<script>window.alert('Your Mail Is Sent To Admin.\\nWait for confirmation mail or call.\\nThanks');
-        window.location.href = '../index.php';</script>";
+        window.location.href = '../index.html';</script>";
     }
 }
 
