@@ -33,7 +33,7 @@
 }
 
 .nav{
-  height: 15em;
+  height: 10em;
   color: white;
 }
 
@@ -69,8 +69,12 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.info{
+  margin-top: 2em;
+}
+
 .main{
-  height: 30em;
+  height: 40em;
 }
 
 .main h1{
@@ -83,6 +87,7 @@
   -moz-box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
   box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
   font-family: 'Orbitron';
+  margin-top: 5em;
 }
 
 .logo{
@@ -96,7 +101,9 @@
 .proIntro{
   background-color: white;
   height: 10em;
-  margin-top: -5em;
+  margin-top: -4em;
+  margin-bottom: -7em;
+  z-index: 990;
   -webkit-box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
   box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
@@ -104,7 +111,7 @@
 
 .products{
   height: auto;
-  background-color: white;
+  background-color: inherit;
 }
 
 .prodLine{
@@ -219,7 +226,7 @@
 .abIntro{
   background-color: white;
   height: 10em;
-  margin-top: -5em;
+  margin-top: -13em;
   -webkit-box-shadow: 0px 47px 53px -18px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 47px 53px -18px rgba(0,0,0,0.75);
   box-shadow: 0px 47px 53px -18px rgba(0,0,0,0.75);
@@ -227,15 +234,16 @@
 
 .about{
   height: 50em;
+  margin-top: -10em;
   background-image: url(../img/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.text{
+.texty{
   height: auto;
-  top: 5em;
+  top: 10em;
   background-color: white;
   font-size: 1.5em;
   -webkit-box-shadow: -31px 0px 53px 1px rgba(0,0,0,0.75);
@@ -251,8 +259,12 @@
   font-family: 'Orbitron';
 }
 
+.itm{
+  background-color: black!important;
+}
+
 .quote{
-  height: 25em;
+  height: auto;
   background: black;
 }
 
@@ -263,12 +275,28 @@
 @media (max-width: 786px) {
   .title{
     font-size: .4em;
-    margin-top: -19em;
+    margin-top: -8em;
   }
   .menu{
     background-color: black;
   }
+  .proIntro{
+    margin-top: 5em;
+  }
+  .products{
+  margin-bottom: -7em;
+  }
+  .abIntro{
+    margin-top: 5em;
+  }
   .logo{
     background-position: center -1em;
+  }
+  .quote{
+    height: 55em;
+  }
+
+  .feeds-size{
+    top: 12em;
   }
 }
