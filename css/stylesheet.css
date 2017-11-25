@@ -11,6 +11,11 @@
   src: url("../fonts/Dosis-Bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamLight.ttf") format("truetype");
+}
+
 /*   END   */
 
 /*   Basic Structure Body Container etc.   */
@@ -18,23 +23,24 @@
 .container-fluid{
   height: auto;
   font-family: 'Dosis';
-  background-image: url(../img/dark.png);
+  /*background: rgba(0, 0, 0, 0.1);*/
+  /*background-image: url(../img/dark.png);*/
   overflow-x: hidden;
 }
 
 * h1 a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 * h1 a:hover{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .nav{
   height: 10em;
-  color: white;
+  color: black;
 }
 
 .menu{
@@ -83,18 +89,15 @@
 
 .title{
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
-  box-shadow: 25px 0px 53px 1px rgba(0,0,0,0.75);
-  font-family: 'Orbitron';
+  font-family: 'Gotham';
   margin-top: 5em;
 }
 
 .logo{
   height: 100%;
   background-image: url(../img/ss.png);
-  background-position: right -4em;
-  background-size: contain;
+  background-position: center -1vh;
+  background-size: 25em 25em;
   background-repeat: no-repeat;
 }
 
@@ -102,7 +105,6 @@
   background-color: white;
   height: 10em;
   margin-top: -4em;
-  margin-bottom: -7em;
   z-index: 990;
   -webkit-box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px -22px 53px -18px rgba(0,0,0,0.75);
@@ -120,16 +122,28 @@
 
 .left{
   background-color: white;
-  height: 100%;
+  height: 80%;
   padding: 0!important;
   margin: 0;
 }
 
 .right{
   background-color: white;
-  height: 100%;
+  height: 80%;
   padding: 0!important;
   margin: 0;
+}
+
+.container{
+  background: white;
+}
+
+.container .col-md-4{
+  /*height: 90%;*/
+}
+
+.container *{
+  margin-left: 2.8%;
 }
 
 .coverall{
@@ -242,21 +256,18 @@
 }
 
 .texty{
-  height: auto;
-  top: 10em;
-  background-color: white;
-  font-size: 1.5em;
-  -webkit-box-shadow: -31px 0px 53px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: -31px 0px 53px 1px rgba(0,0,0,0.75);
-  box-shadow: -31px 0px 53px 1px rgba(0,0,0,0.75);
-  font-family: 'Orbitron';
+  height: 70vh;
+  padding-top: 10vh;
+  color: white;
+  font-size: 1.9em;
+  font-family: 'Gotham';
 }
 
 .text2{
   height: auto;
-  top: 3em;
+  padding-top: 3em;
   font-size: 1.5em;
-  font-family: 'Orbitron';
+  font-family: 'Gotham';
 }
 
 .itm{
@@ -265,7 +276,16 @@
 
 .quote{
   height: auto;
+  background: white;
+}
+
+.footer{
+  height: 15vh;
   background: black;
+}
+
+.footer h4 img{
+  height: 10vh;
 }
 
 ::-webkit-scrollbar{
@@ -273,12 +293,21 @@
 }
 
 @media (max-width: 786px) {
+  .container *{
+  margin-left: 0;
+  margin-bottom: 5%;
+}
   .title{
     font-size: .4em;
     margin-top: -8em;
+    box-shadow: none;
+    text-align: center;
   }
   .menu{
-    background-color: black;
+    /*background-color: black;*/
+  }
+  .main{
+    height: 60vh;
   }
   .proIntro{
     margin-top: 5em;
