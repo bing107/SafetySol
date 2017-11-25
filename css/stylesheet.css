@@ -91,6 +91,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   font-family: 'Gotham';
   margin-top: 5em;
+  margin-left: 6em;
 }
 
 .logo{
@@ -300,6 +301,7 @@
   .title{
     font-size: .4em;
     margin-top: -8em;
+    margin-left: 0;
     box-shadow: none;
     text-align: center;
   }
